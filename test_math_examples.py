@@ -4,6 +4,8 @@ import examples_math
 def test_add():
     assert examples_math.add(3, 5) == 8
     assert examples_math.add("Hello ", "World!") == "Hello World!"
+    assert examples_math.add(5.6, 6.7) == 12.3
+    assert examples_math.add(5.6, 6) == 11.6
 
 
 def test_float_divide():
