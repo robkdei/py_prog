@@ -11,10 +11,10 @@ def test_slice():
 
 
 def test_is_present():
-    assert not examples_list.is_present(["oranges", "apples", "pears", "grapes"], "strawberries")
     assert examples_list.is_present(["oranges", "apples", "pears", "grapes"], "oranges")
+    assert not examples_list.is_present(["oranges", "apples", "pears", "grapes"], "strawberries")
 
 
-def test_is_no_present():
-    assert examples_list.is_present(["oranges", "apples", "pears", "grapes"], "strawberries")
-    assert not examples_list.is_present(["oranges", "apples", "pears", "grapes"], "oranges")
+def test_is_not_present():
+    assert examples_list.is_not_present(["oranges", "apples", "pears", "grapes"], "strawberries")
+    assert not examples_list.is_not_present(["oranges", "apples", "pears", "grapes"], "oranges")
